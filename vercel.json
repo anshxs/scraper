@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/main.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/images", "dest": "/api/main.py" },
+    { "src": "/videos", "dest": "/api/main.py" },
+    { "src": "/search", "dest": "/api/main.py" }
+  ]
+}
